@@ -14,6 +14,7 @@
               <b-nav-item><router-link to='/props'>Props</router-link></b-nav-item>
               <b-nav-item><router-link to='/vuex'>Vuex</router-link></b-nav-item>
               <b-nav-item><router-link to='/vuex-ver2'>Vuex-ver2</router-link></b-nav-item>
+              <b-nav-item><router-link to='/axios'>Axios</router-link></b-nav-item>
               
             </b-nav>
           </nav>

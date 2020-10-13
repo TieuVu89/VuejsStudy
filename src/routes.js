@@ -7,6 +7,7 @@ import Rendering from './components/Rendering.vue';
 import ProfilePage from './components/props,emmitEvents/ProfilePage.vue';
 import Vuex from './components/Vuex.vue';
 import ProductForm from './components/products/ProductForm.vue';
+import Axios from './components/Axios.vue';
 
 const routes = [
     { path: '/computed', component: Computed },
@@ -18,5 +19,6 @@ const routes = [
     { path: '/props', component: ProfilePage },
     { path: '/vuex', component: Vuex },
     { path: '/vuex-ver2', component: ProductForm },
+    { path: '/Axios', component: Axios },
 ];
 export default routes;
