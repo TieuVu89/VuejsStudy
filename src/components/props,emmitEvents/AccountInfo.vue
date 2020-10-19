@@ -3,11 +3,11 @@
    <button v-if="isPublished" @click='changeUsername()'>Change Username</button>
    {{username}}
 
-    <h3>Number: {{ age }}</h3>
-    <h3>Array: {{ commentIds }}</h3>
-    <h3>Object: {{ author }}</h3>
+    <h3>Number: {{ age }} <button @click="changeAge()">Change Age</button></h3>
+    <h3>Array: {{ commentIds }} <button @click="changeCommentIds()">change CommentIds</button></h3>
+    <h3>Object: {{ author }} <button @click="changeAuthor()">change Author</button></h3>
     
-    <h3>ContactsPromise: {{ contactsPromise }}</h3>
+    <!-- <h3>ContactsPromise: {{ contactsPromise }}</h3> -->
     <slot/>
     
  </div>
@@ -45,6 +45,15 @@ export default {
  methods: {
    changeUsername() {
      this.$emit('changeUsername')
+   },
+    changeAge() {
+     this.$emit('changeAge')
+   },
+   changeAuthor(){
+     this.$emit('changeAuthor')
+   },
+   changeCommentIds(){
+     this.$emit('changeCommentIds')
    }
  },
  
